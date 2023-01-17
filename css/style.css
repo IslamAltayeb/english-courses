@@ -1,0 +1,68 @@
+/* global prop */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color:#42246e;
+    --secondary-color:#62438f;
+    --third-color:#f0ba50;
+    --main-font: sans-serif;
+}
+
+body{
+    background-color: var(--main-color);    
+    margin: 0 auto;
+    width: 70%;
+}
+
+.main-btn{
+    background-color: var(--third-color);
+    border: none !important;   
+}
+/* start header */
+ .header .container::after{
+    content: "";    
+    width: 150px;
+    height: 4px;
+    background-color: var(--third-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header p{
+    color: var(--third-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header h1{
+    color: white;
+}
+/* end header */
+
+/* start courses section */
+ .card {
+    background-color: var(--secondary-color);
+}
+
+.row span{
+    color: var(--third-color);
+}
+
+.row img{
+    height: 200px;
+}
+/* end courses section */
+
+/* start footer */
+.footer span{
+    color: white !important;
+    border-bottom: 2px solid var(--third-color);
+}
+/* end footer */
